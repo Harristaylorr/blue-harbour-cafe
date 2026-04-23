@@ -126,7 +126,8 @@
 
 /* mobile drawer */
 .nav-mobile {
-  display: none;
+  display: flex;
+  visibility: hidden;
   position: fixed;
   top: 68px;
   left: 0;
@@ -141,12 +142,12 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   transform: translateY(-8px);
   opacity: 0;
-  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
   pointer-events: none;
 }
 
 .nav-mobile.open {
-  display: flex;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
