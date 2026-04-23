@@ -31,7 +31,7 @@
   .nav-links,
   .nav-right { display: none; }
 
-  .nav-hamburger { display: flex; }
+  .nav-hamburger { display: flex; margin-left: auto; }
 
   #nav { padding: 0 1.5rem; }
 
